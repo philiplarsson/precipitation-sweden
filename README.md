@@ -25,7 +25,7 @@ $ ./precipitation.py
 ### Check if there is any precipitation in the next 48 hours:
 
 ```terminal
-$ ./precipitation.py -hours 48
+$ ./precipitation.py --hours 48
 ```
 
 ### Check if there is any precipitation in the next 12 hours in Stockholm:
