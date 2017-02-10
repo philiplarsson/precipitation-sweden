@@ -1,6 +1,6 @@
 # Precipitation
 
-Check if there is any precipitation for specified hours forward (8 is default).
+`precipitation.py` is a small python3 script that checks if there is any precipitation for specified hours forward (8 is default) in a specified geographic area. I use this in [i3blocks](https://github.com/vivien/i3blocks) as a command to check if a need an umbrella today or not. 
 
 Note that the longitude and latitude needs to be in a [valid geographic area](http://opendata.smhi.se/apidocs/metfcst/geographic_area.html).
 Use [this](http://opendata.smhi.se/apidocs/metfcst/demo_point.html) link to get correct latitude and longitude: 
