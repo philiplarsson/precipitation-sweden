@@ -59,6 +59,7 @@ def parse_command_line_options():
     if args.list_categorys:
         print("Printing categorys.\n value: meaning")
         pprint(categorys)
+        sys.exit()
 
     if args.only_value:
         print_category = False
@@ -104,6 +105,5 @@ if print_category:
     print(categorys[pcat])
 else:
     print(pcat)
-
 
 
