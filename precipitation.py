@@ -25,7 +25,7 @@ print_category = True
 only_temp = False
 include_temp = False
 
-time_now_as_string = "%d-%02d-%02dT%d:00:00Z" % (datetime.now().year, datetime.now().month, datetime.now().day, datetime.now().hour)
+time_now_as_string = "%d-%02d-%02dT%02d:00:00Z" % (datetime.now().year, datetime.now().month, datetime.now().day, datetime.now().hour)
 
 categorys = {
         0: "no precipitation",
@@ -111,7 +111,7 @@ def get_current_temperature(start_index, data):
     for i in range(0, 19):
         if (data["timeSeries"][start_index]["parameters"][i]["name"] == "t"):
             temperature = data["timeSeries"][start_index]["parameters"][i]["values"][0]
-
+            
             return temperature;
     return None;
 
